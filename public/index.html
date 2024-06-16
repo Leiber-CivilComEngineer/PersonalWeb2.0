@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dopefolio</title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./images/png/leiber-lyu.png"
+              alt="Leiber Lyu Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Leiber Lyu</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link"> Home </a>
+            </li>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./pdf/LeiberLyu20240509.pdf" class="header__link" target="_blank"> Resume </a>
+          </li>
+            <li class="header__link-wrapper">
+              <a href="#about" class="header__link">About </a>
+            <li class="header__link-wrapper">
+              <a href="#projects" class="header__link">Projects </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./images/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./images/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="#home"> Home </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./images/pdf/LeiberLyu20240509.pdf" target="_blank"> Resume </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hi, I'm Leiber</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            A proactive and outgoing software engineer with a passion for life and a keen interest in all things tech. I'm constantly curious and excited about exploring new innovations and advancements in the field. Welcome to my corner of the web!
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="#about" class="btn btn--bg">TELL ME MORE!</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/leiber-lyu-b82866241/" class="home-hero__social-icon-link" target="_blank">
+            <img
+              src="./images/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/Leiber-CivilComEngineer" class="home-hero__social-icon-link" target="_blank">
+            <img
+              src="./images/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://www.instagram.com/leiber_lyu/"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" target="_blank"
+          >
+            <img
+              src="./images/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="mailto:leiber1117@gmail.com"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" 
+          >
+            <img
+              src="./images/png/email-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="javascript:void(0)"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+            id="copyPhoneNumber"
+          >
+            <img
+              src="./images/png/phone-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            I am a Software Engineer currently working at a local tech company in Australia. My work spans backend, frontend, mobile development, databases, cloud services, network communication, DevOps, and more. I have a strong self-learning ability, excellent communication skills, and a passion for new technologies. You can find detailed information about my work experience in my resume.
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Technical Experience</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                
+              </p>
+              <p class="about__content-details-para">
+                My current full-time job in Australia involves maintaining a powerful internet filter product written in <strong>C/C++</strong>. My work encompasses <strong>backend</strong> development and maintenance, <strong>Linux</strong> server maintenance, network architecture deployment, and handling network requests.Including parsing network requests, store updated user data in an <strong>SQL database</strong>, or retrieve corresponding data from the database to respond to user requests. Additionally, I am responsible for maintaining some <strong>frontend</strong> code and developing <strong>iOS</strong> applications. Under the DevOps framework, I also handle some <strong>CI/CD</strong> tasks. I am familiar with the entire <strong>Scrum</strong> based software development process.
+              </p>
+              <p class="about__content-details-para">
+                Outside of work, I spend my spare time working on personal projects, learning other mainstream technologies, and enhancing my tech stack. For example, the personal website you are currently browsing is one of my personal projects. Detailed descriptions of my personal projects can be found in the next section.
+              </p>
+            </div>
+            <a href="./images/pdf/LeiberLyu20240509.pdf" class="btn btn--med btn--theme dynamicBgClr" target="_blank"
+              >Full Resume</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">C/C++</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">SwiftUI</div>
+              <div class="skills__skill">Java</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">TypeScript</div>
+              <div class="skills__skill">Git</div>
+              <div class="skills__skill">SQL</div>
+              <div class="skills__skill">AWS</div>
+              <div class="skills__skill">Docker</div>
+              <div class="skills__skill">Jenkins</div>
+              <div class="skills__skill">GitHub Actions </div>
+              <div class="skills__skill">DevOps</div>
+              <div class="skills__skill">CI/CD</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">Scrum</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            This section will showcase my personal projects outside of work
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./images/png/project1.png"
+                alt="Software Screenshot"
+                class="projects__row-img large"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 1:&nbsp;&nbsp;Website V1.0</h3>
+              <h4 class="projects__row-content-subtitle">
+                Automated integration and deployment of my personal website using Jenkins, AWS, Dockers,and SonarQube.
+              </h4>
+              <p class="projects__row-content-desc">
+                The project code is hosted on GitHub, with Jenkins, Docker, and SonarQube deployed on different AWS EC2 instances. Whenever a new commit is pushed, Jenkins triggers SonarQube to check the code, then deploys the code to the server running Docker. The Dockerfile is then used to create a new image, and Nginx is used to serve the frontend pages. Finally, AWS Route 53 is used to resolve my personal domain, linking it to my personal website.
+              </p>
+              <a
+                href=""
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+              src="./images/png/project2.png"
+              alt="Software Screenshot"
+              class="projects__row-img small"
+              loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 2:&nbsp;&nbsp;Website V2.0</h3>
+              <h4 class="projects__row-content-subtitle">
+                Automated integration and deployment of my personal website using Github Actions.
+              </h4>
+              <p class="projects__row-content-desc">
+                Since the services for Jenkins, Docker, and SonarQube require processors with sufficient computing power and storage space, and we might add more services to the process in the future, the free AWS EC2 instances do not fully meet these requirements. Therefore, we use GitHub Actions to handle the CI/CD part of the work, and use the free AWS EC2 instances only to run the Nginx service to host the website, thereby reducing costs.
+              </p>
+              <a
+                href=""
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./images/jpeg/project-mockup-example.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img large"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 3: Coming Soon!</h3>
+              <p class="projects__row-content-desc">
+                More interesting projects are coming soon! If you could leave your thoughts and suggestions in the 'Contact' section below, it would be greatly appreciated.
+              </p>
+              <a
+                href="#contact"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Contact Me</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">Contact</span>
+          <span class="heading-sec__sub">
+            Feel free to leave your valuable suggestions and thoughts. 
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="/send-email" method="POST" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/leiber-lyu-b82866241/">
+                <img
+                  class="main-footer__icon"
+                  src="./images/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/Leiber-CivilComEngineer">
+                <img
+                  class="main-footer__icon"
+                  src="./images/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/leiber_lyu/">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./images/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Leiber Lyu</h4>
+            <p class="main-footer__short-desc">
+              Innovate the world with information technologies.
+            </p>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright 2024. Made by
+          Leiber Lyu
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
