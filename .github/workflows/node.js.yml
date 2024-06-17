@@ -24,6 +24,6 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: |
-      touch .env
-      echo "${{ secrets.EMAIL_CONF }}" > .env 
+        touch .env
+        echo "${{ secrets.EMAIL_CONF }}" > .env 
     - run: pm2 restart server
