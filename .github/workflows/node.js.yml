@@ -23,8 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
+    - run: |
+      touch .env
+      echo "${{ secrets.EMAIL_CONF }}" > .env 
     - run: pm2 restart server
-    env: 
-      SENDER: ${{ secrets.EMAIL_CONF.SENDER }}
-      PASS: ${{ secrets.EMAIL_CONF.PASS }}
-      RECEIVER: ${{ secrets.EMAIL_CONF.RECEIVER }}

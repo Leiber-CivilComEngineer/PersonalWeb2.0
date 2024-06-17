@@ -19,8 +19,8 @@ app.post('/send-email', (req, res) => {
         port: 587,
         secure: false,
         auth: {
-            user: process.env.SENDER, // generated ethereal user
-            pass: process.env.PASS  // generated ethereal password
+            user: process.env.EMAIL_SENDER, // generated ethereal user
+            pass: process.env.EMAIL_PASS  // generated ethereal password
         },
         tls:{
             rejectUnauthorized:false
@@ -28,8 +28,8 @@ app.post('/send-email', (req, res) => {
     });
 
     const mailOptions = {
-        from: `"LeiberWebsite Contact" <${process.env.SENDER}>`, 
-        to: process.env.RECEIVER, 
+        from: `"LeiberWebsite Contact" <${process.env.EMAIL_SENDER}>`, 
+        to: process.env.EMAIL_RECEIVER, 
         subject: 'LeiberWebsite Contact Form',
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     };
