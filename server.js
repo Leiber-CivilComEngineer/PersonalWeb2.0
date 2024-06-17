@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
@@ -18,8 +19,8 @@ app.post('/send-email', (req, res) => {
         port: 587,
         secure: false,
         auth: {
-            user: 'leiberlyu.work@gmail.com', // generated ethereal user
-            pass: 'phfbnjngiewsylmi'  // generated ethereal password
+            user: process.env.SENDER, // generated ethereal user
+            pass: process.env.PASS  // generated ethereal password
         },
         tls:{
             rejectUnauthorized:false
@@ -27,8 +28,8 @@ app.post('/send-email', (req, res) => {
     });
 
     const mailOptions = {
-        from: 'LeiberWebsite Contact" <leiberlyu.work@email.com>',
-        to: 'leiber1117@gmail.com', 
+        from: `"LeiberWebsite Contact" <${process.env.SENDER}>`, 
+        to: process.env.RECEIVER, 
         subject: 'LeiberWebsite Contact Form',
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     };
