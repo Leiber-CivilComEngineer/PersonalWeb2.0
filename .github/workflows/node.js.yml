@@ -27,8 +27,8 @@ jobs:
         PASS: ${{ secrets.EMAIL_CONF.PASS }}
         RECEIVER: ${{ secrets.EMAIL_CONF.RECEIVER }}
     - run: npm ci
-    - run: |
+    - run: pm2 restart server
+    env:
       export SENDER=${SENDER}
       export PASS=${PASS}
       export RECEIVER=${RECEIVER}
-      pm2 restart server
