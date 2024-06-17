@@ -1,7 +1,7 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
-const PORT = 80;
+const PORT = 3000;
 
 // staic folder
 app.use(express.static('public'));
