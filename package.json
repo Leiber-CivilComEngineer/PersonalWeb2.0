@@ -9,8 +9,8 @@
   "author": "",
   "license": "",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "nodemailer": "^6.9.13"
-  },
-  "devDependencies": {}
+  }
 }
