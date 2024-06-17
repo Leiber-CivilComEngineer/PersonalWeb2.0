@@ -22,13 +22,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-      env: 
-        SENDER: ${{ secrets.EMAIL_CONF.SENDER }}
-        PASS: ${{ secrets.EMAIL_CONF.PASS }}
-        RECEIVER: ${{ secrets.EMAIL_CONF.RECEIVER }}
     - run: npm ci
     - run: pm2 restart server
-    env:
-      export SENDER=${SENDER}
-      export PASS=${PASS}
-      export RECEIVER=${RECEIVER}
+    env: 
+      SENDER: ${{ secrets.EMAIL_CONF.SENDER }}
+      PASS: ${{ secrets.EMAIL_CONF.PASS }}
+      RECEIVER: ${{ secrets.EMAIL_CONF.RECEIVER }}
