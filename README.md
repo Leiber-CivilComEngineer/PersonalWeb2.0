@@ -14,7 +14,7 @@ This is the upgraded version of the [automated personal website solution](https:
 
 ## Website ScreenShot
 
-![Web2.0](/Users/leiber/Desktop/github/Web2.0.png)
+![Web2.0](./public/images/png/Web2.0.png)
 
 
 
